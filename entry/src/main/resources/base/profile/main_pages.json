@@ -1,0 +1,6 @@
+{
+  "src": [
+    "pages/main/widgets/MainPage",
+    "pages/rank/widgets/RankPage"
+  ]
+}

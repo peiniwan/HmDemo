@@ -1,0 +1,76 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "prompt_text",
+      "value": "Press again to exit the app"
+    },
+    {
+      "name": "title_default",
+      "value": "121123"
+    },
+    {
+      "name": "fruit_watermelon",
+      "value": "watermelon"
+    },
+    {
+      "name": "fruit_apple",
+      "value": "apple"
+    },
+    {
+      "name": "fruit_banana",
+      "value": "banana"
+    },
+    {
+      "name": "fruit_grapes",
+      "value": "grapes"
+    },
+    {
+      "name": "fruit_red_grape",
+      "value": "grape"
+    },
+    {
+      "name": "fruit_pears",
+      "value": "pears"
+    },
+    {
+      "name": "fruit_pineapple",
+      "value": "pineapple"
+    },
+    {
+      "name": "fruit_durian",
+      "value": "durian"
+    },
+    {
+      "name": "fruit_guava",
+      "value": "guava"
+    },
+    {
+      "name": "fruit_carambola",
+      "value": "carambola"
+    },
+    {
+      "name": "page_number",
+      "value": "ranking"
+    },
+    {
+      "name": "page_vote",
+      "value": "vote"
+    },
+    {
+      "name": "page_type",
+      "value": "variety"
+    }
+  ]
+}
