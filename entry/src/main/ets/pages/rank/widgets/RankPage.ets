@@ -124,7 +124,7 @@ export struct RankPage {
         ForEach(this.isSwitchDataSource ? this.dataSource1 : this.dataSource2,
           (item: RankData, index?: number) => {
             ListItem() {
-              ListItemComponent({ index: (Number(index) + 1), name: item.name, vote: "",
+              ListItemComponent({ index: (Number(index) + 1), name: item.name, vote: item.vote,
                 isSwitchDataSource: this.isSwitchDataSource
               })
             }

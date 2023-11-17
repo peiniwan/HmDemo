@@ -31,14 +31,14 @@ export const NavList: NavItem[] = [
 
   new NavItem(
     TabId.ACHIEVEMENT,
-    '排行榜',
+    '排行',
     $r('app.media.ic_tabs_achievement_normal'),
     $r('app.media.ic_tabs_achievement_sel')
   ),
 
   new NavItem(
     TabId.MINE,
-    '搜索页',
+    '搜索',
     $r('app.media.ic_tabs_mine_normal'),
     $r('app.media.ic_tabs_mine_sel'),
   ),

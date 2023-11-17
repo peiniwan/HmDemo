@@ -25,7 +25,7 @@ export struct ListItemComponent {
   private name?: Resource;
   //@Prop与@State有相同的语义，但初始化方式不同。@Prop装饰的变量必须使用其父组件提供的@State变量进行初始化
   //@Prop属于单向数据绑定
-  @Prop vote: string;
+  vote: string;
   @Prop isSwitchDataSource: boolean;
   // The state is related to the font color of ListItemComponent.
   @State isChange: boolean = false;

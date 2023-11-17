@@ -4,7 +4,7 @@ import { GoodsListDialogPage } from './GoodsListDialogPage'
 @Entry
 @Component
 export struct HomePage {
-  protected columns = ["自定义弹窗", "优惠券", "预备功能"]
+  protected columns = ["自定义弹窗", "优惠券", "其他功能"]
   dialogController: CustomDialogController = new CustomDialogController({
     builder: GoodsListDialogPage({}),
   })

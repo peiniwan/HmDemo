@@ -4,6 +4,7 @@ import { APP_EXIT_INTERVAL, MATCH_PARENT, TIME } from '../../../common/model/Con
 import { RankPage } from '../../rank/widgets/RankPage';
 import { NavList, TabId } from '../model/NavDataModel';
 import { HomePage } from '../../book/widgets/HomePage';
+import { SearchBookPage } from '../../book/widgets/SearchBookPage';
 
 @Entry
 @Component
@@ -26,7 +27,8 @@ struct MainPage {
       }.tabBar(this.TabBuilder(TabId.ACHIEVEMENT))
 
       TabContent() {
-
+        SearchBookPage()
+          .size({ width: MATCH_PARENT, height: MATCH_PARENT })
       }.tabBar(this.TabBuilder(TabId.MINE))
     }
     //禁止滑动切换
