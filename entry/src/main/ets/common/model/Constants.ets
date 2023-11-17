@@ -33,7 +33,7 @@ export enum FontWeight {
 /**
  * The weight is global default value for component size.
  */
-export const WEIGHT = '100%';
+export const MATCH_PARENT = '100%';
 
 /**
  * The duration of toast.
@@ -50,10 +50,6 @@ export const APP_EXIT_INTERVAL: number = 4500;
  */
 export const TAG: string = 'RankPage';
 
-/**
- * The title of TitleComponent.
- */
-export const TITLE: Resource = $r('app.string.title_default');
 
 class style {
   RANK_PADDING: number = 15;

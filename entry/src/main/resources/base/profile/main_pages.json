@@ -1,6 +1,9 @@
 {
   "src": [
     "pages/main/widgets/MainPage",
-    "pages/rank/widgets/RankPage"
+    "pages/rank/widgets/RankPage",
+    "pages/book/widgets/GoodsListDialogPage",
+    "pages/book/widgets/HomePage",
+    "pages/book/widgets/SearchBookPage"
   ]
 }

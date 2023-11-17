@@ -1,8 +1,9 @@
 import promptAction from '@ohos.promptAction';
 import hilog from '@ohos.hilog';
-import { APP_EXIT_INTERVAL, TIME } from '../../../common/model/Constants';
+import { APP_EXIT_INTERVAL, MATCH_PARENT, TIME } from '../../../common/model/Constants';
 import { RankPage } from '../../rank/widgets/RankPage';
 import { NavList, TabId } from '../model/NavDataModel';
+import { HomePage } from '../../book/widgets/HomePage';
 
 @Entry
 @Component
@@ -15,16 +16,17 @@ struct MainPage {
   build() {
     Tabs({ barPosition: BarPosition.End, controller: this.tabsController }) {
       TabContent() {
-
+        HomePage()
+          .size({ width: MATCH_PARENT, height: MATCH_PARENT })
       }.tabBar(this.TabBuilder(TabId.HOME))
 
       TabContent() {
-
-      }.tabBar(this.TabBuilder(TabId.ACHIEVEMENT))
-      TabContent() {
         RankPage()
-          .margin({ top: 10, left: 10 })
-          .size({ width: '100%', height: '100%' })
+          .size({ width: MATCH_PARENT, height: MATCH_PARENT })
+      }.tabBar(this.TabBuilder(TabId.ACHIEVEMENT))
+
+      TabContent() {
+
       }.tabBar(this.TabBuilder(TabId.MINE))
     }
     //禁止滑动切换

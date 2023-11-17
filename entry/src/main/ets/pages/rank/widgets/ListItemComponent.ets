@@ -16,7 +16,7 @@ import router from '@ohos.router';
 import common from '@ohos.app.ability.common';
 
 import hilog from '@ohos.hilog';
-import { FontSize, ItemStyle, WEIGHT } from '../../../common/model/Constants';
+import { FontSize, ItemStyle, MATCH_PARENT } from '../../../common/model/Constants';
 
 
 @Component
@@ -61,7 +61,7 @@ export struct ListItemComponent {
         .fontColor(this.isChange ? ItemStyle.COLOR_BLUE : ItemStyle.COLOR_BLACK)
     }
     .height(ItemStyle.BAR_HEIGHT)
-    .width(WEIGHT)
+    .width(MATCH_PARENT)
     .onClick((event?: ClickEvent) => {
       this.isSwitchDataSource = !this.isSwitchDataSource;
       this.isChange = !this.isChange;

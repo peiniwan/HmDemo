@@ -15,7 +15,7 @@
 
 import AppContext from '@ohos.app.ability.common';
 import hilog from '@ohos.hilog';
-import { FontSize, TitleBarStyle, WEIGHT } from '../../../common/model/Constants';
+import { FontSize, TitleBarStyle, MATCH_PARENT } from '../../../common/model/Constants';
 
 @Component
 export struct TitleComponent {
@@ -46,7 +46,7 @@ export struct TitleComponent {
           .fontSize(FontSize.LARGE)
       }
       .width(TitleBarStyle.WEIGHT)
-      .height(WEIGHT)
+      .height(MATCH_PARENT)
       .justifyContent(FlexAlign.Start)
 
       Row() {
@@ -59,10 +59,10 @@ export struct TitleComponent {
           })
       }
       .width(TitleBarStyle.WEIGHT)
-      .height(WEIGHT)
+      .height(MATCH_PARENT)
       .justifyContent(FlexAlign.End)
     }
-    .width(WEIGHT)
+    .width(MATCH_PARENT)
     .padding({ left: TitleBarStyle.BAR_MARGIN_HORIZONTAL,
       right: TitleBarStyle.BAR_MARGIN_HORIZONTAL })
     .margin({ top: TitleBarStyle.BAR_MARGIN_TOP })

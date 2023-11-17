@@ -20,7 +20,7 @@ import { RankViewModel } from '../model/RankViewModel';
 import { RankData } from '../model/RankData';
 import { TitleComponent } from './TitleComponent';
 import { ListHeaderComponent } from './ListHeaderComponent';
-import { APP_EXIT_INTERVAL, Style, TIME, TITLE, WEIGHT } from '../../../common/model/Constants';
+import { APP_EXIT_INTERVAL, Style, TIME, MATCH_PARENT } from '../../../common/model/Constants';
 import { ListItemComponent } from './ListItemComponent';
 
 let rankModel: RankViewModel = new RankViewModel();
@@ -114,8 +114,8 @@ export struct RankPage {
       this.RankList(Style.CONTENT_WIDTH)
     }
     .backgroundColor($r('app.color.background'))
-    .height(WEIGHT)
-    .width(WEIGHT)
+    .height(MATCH_PARENT)
+    .width(MATCH_PARENT)
   }
 
   @Builder RankList(widthValue: Length) {
@@ -130,7 +130,7 @@ export struct RankPage {
             }
           }, (item: RankData) => JSON.stringify(item))
       }
-      .width(WEIGHT)
+      .width(MATCH_PARENT)
       .height(Style.LIST_HEIGHT)
       .divider({ strokeWidth: Style.STROKE_WIDTH })
     }
